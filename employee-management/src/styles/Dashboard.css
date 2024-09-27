@@ -1,0 +1,40 @@
+/* Dashboard.css */
+.dashboard-background {
+    position: relative;
+    overflow: hidden;
+    height: 100vh; /* Set full height for animation */
+    background: linear-gradient(135deg, #a2c2e8, #d3c0e8); /* Softer gradient */
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+   /* Light semi-transparent overlay */
+    z-index: 1; /* Ensure overlay is above the background but below content */
+  }
+  
+  .dashboard-content {
+    position: relative;
+    z-index: 2; /* Ensure content is above the overlay */
+    border-radius: 12px; /* Rounded corners for the content area */
+    padding: 20px; /* Padding for the content */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  }
+  

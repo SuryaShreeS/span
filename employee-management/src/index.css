@@ -1,0 +1,55 @@
+/* styles.css */
+/* Example for Roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif; /* Change to a more modern font */
+  background-image: url('../src/assets/images/background.jpeg'); /* Your background image */
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background from repeating */
+  color: #333; /* A darker color for better readability */
+}
+
+
+.navbar {
+  background-color: #007bff; /* Header color */
+  color: white;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer {
+  background-color: #007bff; /* Footer color */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.dashboard-content {
+  margin-top: 60px; /* Adjust based on navbar height */
+  margin-bottom: 40px; /* Adjust based on footer height */
+  padding: 20px;
+  background-color: white; /* Main content background */
+  border-radius: 8px; /* Add border radius for a smoother look */
+}
+
+.company-name {
+  animation: slide 5s linear infinite; /* Add animation to company name */
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
